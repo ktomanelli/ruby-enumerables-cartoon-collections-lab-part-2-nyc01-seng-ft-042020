@@ -25,6 +25,8 @@ def find_valid_calls(planeteer_calls)
   planeteer_calls.each_with_index{|item,i|
     if(valid_calls.include?(item))
       return valid_calls[i]
+    else
+      return nil
     end
   }
 end
